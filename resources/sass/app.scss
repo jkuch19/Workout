@@ -1,0 +1,87 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~admin-lte/build/scss/AdminLTE';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+.general-form {
+	max-width: 960px;
+}
+
+.content {
+	padding: 50px 100px !important;
+}
+
+.table {
+	margin-bottom: 0 !important;
+}
+
+.workout-table {
+	text-align: center;
+	max-width: 600px;
+	.title {
+		font-size: 20px;
+	}
+	.subtitle {
+		font-weight: bold;
+	}
+	td {
+		padding: 0.5rem !important;
+	}
+
+
+}
+
+.nav-icon {
+	width: 20px;
+	text-align: center;
+}
+
+.panel-body {
+	ul {
+		list-style: none;
+	}
+}
+
+.fa-trash {
+	color: #0275d8;
+	margin-left: 10px;
+	&:hover {
+		cursor: pointer;
+	}
+
+}
+
+.main-footer {
+	text-align: center;
+}
+
+.bg-primary {
+	background-color: #466b98 !important;
+}
+
+.btn-primary {
+	background-color: #466b98 !important;
+}
+
+.back a:visited
+{
+    color: white;
+	text-decoration: none;
+}
