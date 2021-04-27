@@ -34,6 +34,7 @@ class HomeController extends Controller
 		return view('dashboard')->with(compact('workouts'));
     }
 
+	//pulls all the workouts for a given day indicated by the id
 	public function day($id)
 	{
 		$day = Day::findOrFail($id);
@@ -43,6 +44,7 @@ class HomeController extends Controller
 		return view('days')->with(compact('workouts', 'day'));
 	}
 
+	//pulls all the workouts for a given muscle group indicated by the id
 	public function muscleGroup($id)
 	{
 		$muscleGroup = MuscleGroup::findOrFail($id);

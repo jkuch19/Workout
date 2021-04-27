@@ -88,12 +88,14 @@
 
 	    });
 
+		//closes the modal if you click close
 		$(document).on('click', '#closeModal', function(event) {
 
 			$('#deleteModal').modal('hide');
 
 		});
 
+		//delete's selected entry if you click delete
 		$(document).on('click', '#deleteConfirm', function(event) {
 
 			event.preventDefault();

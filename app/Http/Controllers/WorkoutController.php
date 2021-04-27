@@ -9,10 +9,9 @@ use App\Models\MuscleGroup;
 
 class WorkoutController extends Controller
 {
-	//grabs all the workouts. used in workouts.index
+	//grabs all the workouts.
   	public function index()
 	{
-
 		$workouts = Workout::orderBy('name')->get();
 
     	return view('workouts.index', [
@@ -20,7 +19,7 @@ class WorkoutController extends Controller
     	]);
   	}
 
-	//grabs all the workouts, days, MGs. used in workouts.show
+	//grabs all the workouts, days, MGs.
   	public function show($id=false)
   	{
 		if(!$id)

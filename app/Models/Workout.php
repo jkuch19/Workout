@@ -13,6 +13,9 @@ class Workout extends Model
 
 	protected $fillable = ['name', 'day_id', 'muscle_group_id'];
 
+	//--- Models --//
+
+	//relationship reference between day and muscleGroup
 	public function day()
 	{
 
@@ -20,7 +23,7 @@ class Workout extends Model
 
 	}
 
-	//relationhip reference between workout and muscleGroup
+	//relationship reference between workout and muscleGroup
 	public function muscleGroup()
 	{
 
@@ -28,7 +31,7 @@ class Workout extends Model
 
 	}
 
-	//relationhip reference between workout and reps
+	//relationship reference between workout and reps
 	public function reps()
 	{
 
@@ -36,13 +39,16 @@ class Workout extends Model
 
 	}
 
-	//relationhip reference between workout and weights
+	//relationship reference between workout and weights
 	public function weights()
 	{
 
 		return $this->hasOne(Weight::class);
 
 	}
+
+
+	//-- Functions --//
 
 	//updates or creates rep record for workout
 	public function setReps($reps)
